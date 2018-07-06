@@ -6,82 +6,9 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class CommonResponse {
+
     @SerializedName("status")
     private String status;
-
-    @SerializedName("message")
-    private String message;
-
-    @SerializedName("requestKey")
-    private String requestKey;
-
-    @SerializedName("text")
-    private String text = "";
-
-    @SerializedName("sendotp")
-    private String sendotp;
-
-    @SerializedName("signup")
-    private SignupResponse signup;
-
-    @SerializedName("login")
-    private LoginResponse login;
-
-    @SerializedName("socialLogin")
-    private SocialLoginResponse socialLogin;
-
-    @SerializedName("verificationCode")
-    private String verificationCode;
-
-//    @SerializedName("verificationCode")
-//    List<SignupResponse> verificationCode;
-
-    @SerializedName("profile")
-    private ProfileResponse profile;
-
-    @SerializedName("myFavourites")
-    private List<MyFavouriteResponse> myFavourites;
-
-    @SerializedName("favourite")
-    private FavouriteResponse favourite;
-
-    @SerializedName("notification")
-    private List<NotificationResponse> notification;
-
-
-    @SerializedName("realWedding")
-    private List<RealWeddingResponse> realwedding;
-
-    public List<RealWeddingResponse> getRealwedding() {
-        return realwedding;
-    }
-
-    public void setRealwedding(List<RealWeddingResponse> realwedding) {
-        this.realwedding = realwedding;
-    }
-
-    @SerializedName("get_inspirational")
-    private List<PhotosResponse> get_inspirational;
-
-    public List<PhotosResponse> getGet_inspirational() {
-        return get_inspirational;
-    }
-
-    public void setGet_inspirational(List<PhotosResponse> get_inspirational) {
-        this.get_inspirational = get_inspirational;
-    }
-
-
-
-
-
-    public String getText() {
-        return text;
-    }
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -89,6 +16,8 @@ public class CommonResponse {
         this.status = status;
     }
 
+    @SerializedName("message")
+    private String message;
     public String getMessage() {
         return message;
     }
@@ -96,6 +25,8 @@ public class CommonResponse {
         this.message = message;
     }
 
+    @SerializedName("requestKey")
+    private String requestKey;
     public String getRequestKey() {
         return requestKey;
     }
@@ -103,6 +34,17 @@ public class CommonResponse {
         this.requestKey = requestKey;
     }
 
+    @SerializedName("text")
+    private String text = "";
+    public String getText() {
+        return text;
+    }
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    @SerializedName("sendotp")
+    private String sendotp;
     public String getSendotp() {
         return sendotp;
     }
@@ -110,27 +52,8 @@ public class CommonResponse {
         this.sendotp = sendotp;
     }
 
-    public LoginResponse getLogin() {
-        return login;
-    }
-    public void setLogin(LoginResponse login) {
-        this.login = login;
-    }
-
-    public SocialLoginResponse getSocialLogin() {
-        return socialLogin;
-    }
-    public void setSocialLogin(SocialLoginResponse socialLogin) {
-        this.socialLogin = socialLogin;
-    }
-
-    public ProfileResponse getProfile() {
-        return profile;
-    }
-    public void setProfile(ProfileResponse profile) {
-        this.profile = profile;
-    }
-
+    @SerializedName("signup")
+    private SignupResponse signup;
     public SignupResponse getSignup() {
         return signup;
     }
@@ -138,14 +61,54 @@ public class CommonResponse {
         this.signup = signup;
     }
 
+    @SerializedName("login")
+    private LoginResponse login;
+    public LoginResponse getLogin() {
+        return login;
+    }
+    public void setLogin(LoginResponse login) {
+        this.login = login;
+    }
+
+    @SerializedName("socialLogin")
+    private SocialLoginResponse socialLogin;
+    public SocialLoginResponse getSocialLogin() {
+        return socialLogin;
+    }
+
+    public void setSocialLogin(SocialLoginResponse socialLogin) {
+        this.socialLogin = socialLogin;
+    }
+
+    @SerializedName("verificationCode")
+    private String verificationCode;
     public String getVerificationCode() {
         return verificationCode;
     }
-
     public void setVerificationCode(String verificationCode) {
         this.verificationCode = verificationCode;
     }
 
+    @SerializedName("profile")
+    private ProfileResponse profile;
+    public ProfileResponse getProfile() {
+        return profile;
+    }
+    public void setProfile(ProfileResponse profile) {
+        this.profile = profile;
+    }
+
+    @SerializedName("myFavourites")
+    private List<MyFavouriteResponse> myFavourites;
+    public List<MyFavouriteResponse> getMyFavourites() {
+        return myFavourites;
+    }
+    public void setMyFavourites(List<MyFavouriteResponse> myFavourites) {
+        this.myFavourites = myFavourites;
+    }
+
+    @SerializedName("favourite")
+    private FavouriteResponse favourite;
     public FavouriteResponse getFavourite() {
         return favourite;
     }
@@ -153,19 +116,31 @@ public class CommonResponse {
         this.favourite = favourite;
     }
 
-    public List<MyFavouriteResponse> getMyFavourites() {
-        return myFavourites;
-    }
-
-    public void setMyFavourites(List<MyFavouriteResponse> myFavourites) {
-        this.myFavourites = myFavourites;
-    }
-
+    @SerializedName("notification")
+    private List<NotificationResponse> notification;
     public List<NotificationResponse> getNotification() {
         return notification;
     }
     public void setNotification(List<NotificationResponse> notification) {
         this.notification = notification;
+    }
+
+    @SerializedName("realWedding")
+    private List<RealWeddingResponse> realwedding;
+    public List<RealWeddingResponse> getRealwedding() {
+        return realwedding;
+    }
+    public void setRealwedding(List<RealWeddingResponse> realwedding) {
+        this.realwedding = realwedding;
+    }
+
+    @SerializedName("get_inspirational")
+    private List<PhotosResponse> get_inspirational;
+    public List<PhotosResponse> getGet_inspirational() {
+        return get_inspirational;
+    }
+    public void setGet_inspirational(List<PhotosResponse> get_inspirational) {
+        this.get_inspirational = get_inspirational;
     }
 
     @SerializedName("blog")
@@ -174,26 +149,15 @@ public class CommonResponse {
         return blog;
     }
 
-//    @SerializedName("vendor")
-//    private List<VendorResponse> vendor;
-//
-//    public List<VendorResponse> getVendor() {
-//        return vendor;
-//    }
-//
-//    public void setVendor(List<VendorResponse> vendor) {
-//        this.vendor = vendor;
-//    }
-
-    @SerializedName("vendor")
+    @SerializedName("maincat")
     @Expose
-    private List<VendorResponse> maincat = null;
+    private List<Maincat> maincat = null;
 
-    public List<VendorResponse> getMaincat() {
+    public List<Maincat> getMaincat() {
         return maincat;
     }
 
-    public void setMaincat(List<VendorResponse> maincat) {
+    public void setMaincat(List<Maincat> maincat) {
         this.maincat = maincat;
     }
 
