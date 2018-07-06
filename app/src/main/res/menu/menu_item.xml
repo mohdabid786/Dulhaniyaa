@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/photos"
+        android:title="Photos"
+        android:icon="@drawable/tab_selector_home">
+    </item>
+
+    <item
+        android:id="@+id/real_wedding"
+        android:title="Real Wedding"
+        android:icon="@drawable/tab_selector_search">
+    </item>
+
+    <item
+        android:id="@+id/blogs"
+        android:title="Blogs"
+        android:icon="@drawable/tab_selector_fav">
+    </item>
+
+
+</menu>

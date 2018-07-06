@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginRight="@dimen/dp_5"--><!--android:layout_marginLeft="@dimen/dp_5"--><!--app:cardCornerRadius="@dimen/dp_8"--><!--android:layout_marginTop="@dimen/dp_5"--><!--app:cardElevation="@dimen/dp_5"--><!--xmlns:card_view="http://schemas.android.com/tools"--><!--&gt;--><!----><!--<ImageView--><!--android:id="@+id/iv_realwedding_banner"--><!--android:layout_width="match_parent"--><!--android:layout_height="@dimen/dp_120"--><!--android:scaleType="fitXY"--><!--android:adjustViewBounds="true"--><!--android:src="@drawable/webcover1" />-->
+
+<!--<android.support.v7.widget.CardView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--app:cardCornerRadius="@dimen/dp_5"--><!--android:layout_marginTop="@dimen/dp_120"--><!--app:contentPadding="@dimen/dp_5"--><!--card_view:cardBackgroundColor="#d5efd4"--><!--card_view:cardElevation="dp_5"--><!--card_view:cardUseCompatPadding="true">-->
+
+<!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+
+<!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal"--><!--android:padding="@dimen/dp_4"--><!--android:weightSum="4">--><!----><!--<TextView--><!--android:id="@+id/tv_realwedding_title"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="4"--><!--android:text="Real Wedding Title"--><!--android:textColor="@color/black" />-->
+
+<!--<ImageView--><!--android:id="@+id/iv_like"--><!--android:layout_width="@dimen/dp_15"--><!--android:layout_height="@dimen/dp_15"--><!--android:src="@drawable/fav_un" />-->
+
+<!--</LinearLayout>-->
+
+
+<!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal"--><!--android:padding="@dimen/dp_4"--><!--android:weightSum="4">--><!----><!--<TextView--><!--android:id="@+id/tv_realwedding_description"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="4"--><!--android:text="Detail and Description"--><!--android:textColor="@color/d_gray" />-->
+
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+
+<!--</android.support.v7.widget.CardView>-->
+
+
+<!--</android.support.v7.widget.CardView>-->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#d5efd4"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_5"
+    android:layout_marginTop="@dimen/dp_5"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_realwedding_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Real Wedding Title"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_realwedding_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_140"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/webcover1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_realwedding_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Detail and Description"
+                android:textColor="@color/d_gray" />
+
+            <ImageView
+                android:id="@+id/iv_realwedding_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/fav_un"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

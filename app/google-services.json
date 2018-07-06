@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "300915298775",
+    "firebase_url": "https://dulhaniyaa-a4150.firebaseio.com",
+    "project_id": "dulhaniyaa-a4150",
+    "storage_bucket": "dulhaniyaa-a4150.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300915298775:android:df287d7375ef08b8",
+        "android_client_info": {
+          "package_name": "com.example.saquib.dulhaniyaacom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300915298775-ov6s2q7mreegnobml2iirjqvg3pv28op.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saquib.dulhaniyaacom",
+            "certificate_hash": "5cfb3ab7503e1f172d62a25b557b155fb992f6b3"
+          }
+        },
+        {
+          "client_id": "300915298775-jtbdff6iq8fi33lrf483md89jr2lgkdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApgUlA4MWUqrziwo3hSVkdjPp-H3BM0yc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300915298775-jtbdff6iq8fi33lrf483md89jr2lgkdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
