@@ -9,14 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- <de.hdodenhof.circleimageview.CircleImageView
-             android:id="@+id/iv_profile_pic"
-             android:layout_width="70dp"
-             android:layout_height="70dp"
-             android:layout_centerInParent="true"
-             android:layout_marginTop="-1dp"
-             android:scaleType="fitXY"
-             android:src="@drawable/default_prof_pic" />-->
         <ImageView
             android:id="@+id/iv_profile_pic"
             android:layout_width="match_parent"
@@ -24,7 +16,6 @@
             android:layout_marginTop="-1dp"
             android:scaleType="fitXY"
             android:src="@drawable/default_prof_pic" />
-
 
         <TextView
             android:id="@+id/tvEdit"

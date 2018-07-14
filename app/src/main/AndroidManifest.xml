@@ -177,7 +177,9 @@
         <activity android:name=".activities.ContactUs" />
         <activity android:name=".activities.OTP" />
         <activity android:name=".activities.Setting" />
-        <activity android:name=".activities.Welcome" />
+        <activity android:name=".activities.Welcome"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activities.DulhaniyaaInspiration" />
         <activity android:name=".activities.Vendor" />
         <activity android:name=".activities.MyWedding" />

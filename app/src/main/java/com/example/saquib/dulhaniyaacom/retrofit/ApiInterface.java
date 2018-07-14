@@ -8,6 +8,7 @@ import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 import retrofit2.Call;
@@ -110,7 +111,7 @@ public interface ApiInterface {
     Call<CommonResponse> getNotification(@Field("token") String token);
 
     @FormUrlEncoded
-    @POST("get_all_cateogry")
+    @GET("get_all_cateogry")
     Call<CommonResponse> getVendorResult(String string);
 
     @FormUrlEncoded

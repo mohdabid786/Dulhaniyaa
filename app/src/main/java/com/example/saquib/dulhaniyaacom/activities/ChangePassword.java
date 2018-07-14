@@ -66,7 +66,8 @@ public class ChangePassword extends AppCompatActivity implements View.OnClickLis
         MyDialog.getInstance(this).showDialog();
         Retrofit retrofit = ApiClient.getClient();
         ApiInterface apiInterface=  retrofit.create(ApiInterface.class);
-        Call<CommonResponse> call=apiInterface.getChangePasswordResult(SharedPreferenceWriter.getInstance(ChangePassword.this).getString(SharedPreferenceKey.token),new_password.getText().toString());
+        Call<CommonResponse> call=apiInterface.getChangePasswordResult(SharedPreferenceWriter.
+                getInstance(ChangePassword.this).getString(SharedPreferenceKey.token),new_password.getText().toString());
 
         call.enqueue(new Callback<CommonResponse>() {
             @Override

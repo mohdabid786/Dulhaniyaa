@@ -1,6 +1,7 @@
 package com.example.saquib.dulhaniyaacom.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     EditText email, pass;
     Button login_button;
     TextView terms, privacy;
+    SharedPreferences spLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_login);
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+        spLogin = getSharedPreferences("LOGINSP",MODE_PRIVATE);
 //        DataBindingUtil.setContentView(this, R.layout.activity_login);
 
 //        getDeviceToken();
@@ -158,7 +162,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 if (response.isSuccessful()) {
                     if (response.body().getStatus().equals("SUCCESS")) {
 //                        SharedPreferenceWriter.getInstance(Login.this).writeStringValue(SharedPreferenceKey.token, response.body().getSocialLogin().getToken());
-                        SharedPreferenceWriter.getInstance(Login.this).writeBooleanValue(SharedPreferenceKey.currentLogin, true);
+                        //SharedPreferenceWriter.getInstance(Login.this).writeBooleanValue(SharedPreferenceKey.currentLogin, true);
+
+                        SharedPreferences.Editor logedit = spLogin.edit();
+                        logedit.putBoolean("LOGIN_CHECK",true);
+                       // logedit.apply();
+                        logedit.commit();
 
                         Intent intent = new Intent(Login.this, Welcome.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -191,7 +200,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 if (response.isSuccessful()) {
                     if (response.body().getStatus().equals("SUCCESS")) {
                         //   SharedPreferenceWriter.getInstance(Login.this).writeStringValue(SharedPreferenceKey.token, response.body().getLogin().getToken());
-                        SharedPreferenceWriter.getInstance(Login.this).writeBooleanValue(SharedPreferenceKey.currentLogin, true);
+                       // SharedPreferenceWriter.getInstance(Login.this).writeBooleanValue(SharedPreferenceKey.currentLogin, true);
+
+                        SharedPreferences.Editor logedit = spLogin.edit();
+                        logedit.putBoolean("LOGIN_CHECK",true);
+                        //logedit.apply();
+                        logedit.commit();
                         //  SharedPreferenceWriter.getInstance(Login.this).writeStringValue(SharedPreferenceKey.NOTIFICATION_STATUS,response.body().getLogin().getStatus());
                         //SharedPreferenceWriter.getInstance(Login.this).writeStringValue(SharedPreferenceKey.Email,response.body().getLogin().getEmail());
                         Intent intent = new Intent(Login.this, Welcome.class);
